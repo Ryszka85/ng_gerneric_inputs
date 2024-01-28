@@ -1,0 +1,8 @@
+<div class="error-container" *ngIf="errorList().length > 0">
+    <h3>Fehler</h3>
+    <ul>
+        <li class="error" *ngFor="let item of errorList()">
+            <a>{{item.errorMessage}}</a>
+        </li>
+    </ul>
+</div>

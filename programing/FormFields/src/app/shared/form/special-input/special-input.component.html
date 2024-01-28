@@ -1,0 +1,9 @@
+<div class="form-control-row">
+    <label for="{{formFieldName}}">{{labelName}} :</label>
+    <input [formControl]="formControl" 
+        id="{{formFieldName}}" 
+        class="form-field" matInput
+        [attr.readonly]="isReadOnly ? true : null"
+    >        
+</div>   
+

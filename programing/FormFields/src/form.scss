@@ -1,0 +1,29 @@
+$error-background-color: #f44336;
+$error-text-color: #fffffc; 
+
+.form-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-width: 360px;    
+    min-height: 150px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 5px 5px 11px 0px rgba(250, 80, 0, 0.5);
+    transition: box-shadow 0.3s ease-in-out;
+
+    form {
+        padding: 20px;
+        // min-height: 150px;
+    }
+
+    
+
+    .action {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        width: 90%;
+    }
+}

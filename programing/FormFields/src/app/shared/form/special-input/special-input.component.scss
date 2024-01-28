@@ -1,0 +1,42 @@
+.form-control-row {
+    display: flex;
+    align-items: center;       
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    label {
+        color: var(--dark-grey);
+        min-width: 100px;
+        font-size: 1.6rem;
+    }
+
+
+    .form-field {
+        display: block;
+        padding: 10px;
+        min-width: 240px;    
+        font-size: 1.6rem;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        border-radius: 4px;
+        outline: none; 
+        transition: border-color 0.3s ease-in-out;
+        flex: 1;
+        margin-left: 10px;
+    
+        &:focus {
+            border-color: #3498db; 
+        }
+    
+        &::placeholder {
+            color: #999; 
+        }
+    
+        &[readonly] {
+            color: #555; 
+            cursor: default; 
+            border: none; 
+            background-color: transparent; 
+        }        
+    }
+}

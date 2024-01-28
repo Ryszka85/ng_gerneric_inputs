@@ -1,0 +1,13 @@
+<div class="center">
+    <div class="form-card">
+        <error-messages (errors)="handleErrorList($event)" [form]="form"></error-messages>
+         
+        <form (ngSubmit)="validate()" [formGroup]="form" class="form">
+            <special-input labelName="Iban" formFieldName="iban" [isReadOnly]="isReadOnly"></special-input>          
+        </form>
+        <div class="action">
+            <button color="warn" mat-raised-button (click)="cancel()">Abrechen</button>
+            <button color="primary" mat-raised-button (click)="validate()">Weiter</button>
+        </div>
+    </div>
+</div>
